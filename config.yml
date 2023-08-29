@@ -115,15 +115,23 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
+    - identifier: home
+      name: Uvod
+      url: /
+      weight: 1
     - identifier: onas
       name: O nas
       url: /onas/
       weight: 10
-    - identifier: tags
-      name: tags
-      url: /tags/
+    - identifier: akce
+      name: Akce
+      url: /akce/
+      weight: 10
+    - identifier: search
+      name: Hledat
+      url: /search/
       weight: 20
-  
+
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
@@ -134,3 +142,31 @@ markup:
     # guessSyntax: true
     # lineNos: true
     # style: monokai
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
+
+
+
+defaultContentLanguage: cs
+defaultContentLanguageInSubdir: true
+languages:
+  cs:
+    contentDir: content/cs
+    languageName: Czech
+    weight: 1
+  en:
+    contentDir: content/en
+    languageName: English
+    weight: 2
+  de:
+    contentDir: content/de
+    languageName: Deutsch
+    weight: 3
+  fr:
+    contentDir: content/fr
+    languageName: Français
+    weight: 4
