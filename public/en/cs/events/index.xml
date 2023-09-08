@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Events on Voce Clara</title>
+    <link>https://example.com/en/cs/events/</link>
+    <description>Recent content in Events on Voce Clara</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cs</language>
+    <lastBuildDate>Sat, 02 Sep 2023 21:48:07 +0200</lastBuildDate><atom:link href="https://example.com/en/cs/events/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Event3</title>
+      <link>https://example.com/en/cs/events/event3/</link>
+      <pubDate>Fri, 08 Sep 2023 18:56:05 +0200</pubDate>
+      
+      <guid>https://example.com/en/cs/events/event3/</guid>
+      <description>Ahoj</description>
+    </item>
+    
+    <item>
+      <title>Event2</title>
+      <link>https://example.com/en/cs/events/event2/</link>
+      <pubDate>Fri, 08 Sep 2023 18:55:00 +0200</pubDate>
+      
+      <guid>https://example.com/en/cs/events/event2/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
