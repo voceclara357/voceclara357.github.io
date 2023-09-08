@@ -68,7 +68,7 @@ theme = "hugo-dpsg"
 
     weight = 3
 
-  [languages.fr]
+  [languages.sk]
 
 
     languageName = "Greek"
