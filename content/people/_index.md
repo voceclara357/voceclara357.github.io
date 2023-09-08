@@ -1,4 +1,0 @@
----
-title: "Lide"
-page: true
----

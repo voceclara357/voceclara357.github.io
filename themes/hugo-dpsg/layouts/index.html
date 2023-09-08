@@ -11,6 +11,13 @@
 		{{ . }}
 	</div>
 	{{- end }}
+	<hr style="background-color: black;">
+	{{ range (where .Site.Pages "Section" "events") }}
+		{{ range .Pages }}
+			<b>{{ .Title }}</b>
+			<p>{{ .Summary }} <a href="{{ .Permalink }}">[Více zde]</a></p>
+		{{ end }}
+	{{ end }}
 	{{- if .Site.Params.indexPager -}}
 		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
 		{{- range $paginator.Pages }}

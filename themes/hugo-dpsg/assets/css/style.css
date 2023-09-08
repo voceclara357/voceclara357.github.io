@@ -160,7 +160,7 @@ body {
 	font-size: .875rem;
 	line-height: 1.6;
 	word-wrap: break-word;
-	background: #F0F4F6;
+	background: #F0F4F9;
 	-webkit-font-smoothing: antialiased;
 	/* Stick footer to bottom */
 	display: flex;
@@ -493,7 +493,7 @@ select {
 .logo {
 	padding: 25px;
 	{{ with .Site.Params.logo.header -}}
-	background: url({{ . | absURL }}) center/cover no-repeat
+	background: url({{ . | absURL }}) top/cover no-repeat
 	{{- end }}
 }
 

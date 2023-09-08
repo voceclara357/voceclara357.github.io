@@ -1,7 +1,7 @@
 baseurl = "https://example.com"
 title = "Voce Clara"
-languageCode = "de"
-DefaultContentLanguage = "de"
+languageCode = "cs"
+DefaultContentLanguage = "cs"
 paginate = "10" # Number of posts per page
 theme = "hugo-dpsg"
 
@@ -32,10 +32,10 @@ theme = "hugo-dpsg"
   highlightColor = "#003056" # Override main theme color
 
 [Params.logo]
-  image = "logo512.png" # Logo image. Path relative to "static"
+  image = "logo.svg" # Logo image. Path relative to "static"
   header = "melody.jpg" # Header image. Path relative to "static"
   title = "Voce Clara" # Logo title, otherwise will use site title
-  subtitle = "Skola odhaleni hlasu" # Logo subtitle
+  subtitle = "" # Logo subtitle
 
 [Params.widgets]
   recent_num = 5 # Set the number of articles in the "Recent articles" widget
@@ -44,14 +44,39 @@ theme = "hugo-dpsg"
 [Params.footer]
   text = "Voce Clara" # Extra text in footer row, understands markdown
 
+
+[languages]
+
+  [languages.cs]
+
+    contentDir = "content/cs"
+    languageName = "Czech"
+
+    weight = 1
+
+  [languages.en]
+
+
+    languageName = "Greek"
+
+    weight = 2
+
+  [languages.de]
+
+
+    languageName = "Greek"
+
+    weight = 3
+
+  [languages.fr]
+
+
+    languageName = "Greek"
+
+    weight = 4
+
 # Custom menu items, normally controlled via front matter in /content files
 [menu]
-
-  [[menu.main]]
-    identifier = "start"
-    name = "Start"
-    url = "/"
-    weight = 1
 
   [[menu.main]]
     identifier = "about"
@@ -60,9 +85,9 @@ theme = "hugo-dpsg"
     weight = 2
 
   [[menu.main]]
-    identifier = "people"
-    name = "People"
-    url = "/people/"
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
     weight = 3
 
   [[menu.main]]
@@ -70,4 +95,10 @@ theme = "hugo-dpsg"
     name = "Events"
     url = "/events/"
     weight = 4
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 5
 
